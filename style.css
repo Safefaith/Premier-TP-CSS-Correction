@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Correction du TP: Ceci est les paramètres généraux */
+* { 
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 0.8rem;
+}
+ /* Ceci est les paramètres généraux  */
+
+
+ /* On veut que le body fasse toujours 100% de la taille de de l'écran de l'utilisateur  */
+body {
+    min-height:100vh;   
+    color:white;
+    background: rgb(54, 54, 54);
+}
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+}
+
+/* Le padding est la marge intèrieur les deux premiers chiffres sont pour haut / bas et  les seconds pour gauche/droite */
+
+h2 {
+    margin:10px;
+    padding:5px;
+}
+nav ul {
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+.header {
+    display:flex;
+    justify-content: space-around;
+    margin:30px auto;
+}
+
+/* Le display flex permet de mettre les éléments les uns à côtés des autres  */
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    width:50%;
+    align-items: center;
+}
+ /* Lorsque un enfant se retrouve seul (enfant unique), le "display: flex" et "space-around" permet de répartir exactement comme il faut dans la hauteur quoi qu'il arrive. Et il faut le limiter dans sa largeur comme pour l'image */
+
+
+h1 {
+    font-size:5rem;
+    margin:auto;
+}
+
+.header-left-container h3 {
+    color:rgb(109, 77, 255);
+    font-size:1.8rem;
+}
+
+
+.header-right {
+    width: 50%;
+}
+
+/* Le pourcentage pour la width signifie qu'il prend 50% de la largeur par rapport au parent (Header) qui est un élément en block (qui prend toute la largeur et qui renvoie à la ligne */
+
+
+/* Donner la largeur avec width  */
+
+#modem {
+    width: 100%;
+}
+
+
+
+.infos {
+    background:rgba(0, 0, 0, 0.493);
+    border-radius:10px;
+    display:flex;
+    justify-content: space-between;
+    margin-top:100px;
+}
+
+.investors {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+
+
+.infos-left {
+    width: 33%;
+}
+
+/* Les 33% sur la width permet à ".infos-left" de ne prendre que 33% par rapport au parent  */
+
+
+.btn-container button {
+    background:rgb(109, 77, 255);
+    height:35px;
+    width:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    color:white;
+    margin: 10px;
+    border:none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.infos-right {
+    width: 67%;
+}
+
+.investors  {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img-container img {
+    height: 60px;
+}
+
+
+
